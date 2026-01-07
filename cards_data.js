@@ -1,0 +1,55 @@
+// cards_data.js
+// Todas las cartas tienen igual valor y probabilidad.
+
+const PACK_IMAGE_URL = "https://ucuha5-yc.myshopify.com/cdn/shop/files/CopiadePRODUCTOS_1_938719bf-06a8-4bc3-9300-9e423abeba6d.png?v=17677";
+
+const CARDS_POOL = [
+    { id: 1, name: "ARG (Argentina)", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/6_54188d7b-1ec4-4851-9866-79708a4341ba.png?v=1767765508&width=990" },
+    { id: 2, name: "URU (Uruguay)", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/7_a9f94022-25fe-492f-9b02-51b78ca0016a.png?v=1767765505&width=990" },
+    { id: 3, name: "COSTA RICA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/8_07f85a37-4bc3-4fe2-8dab-375f7869f8fe.png?v=1767765508&width=990" },
+    { id: 4, name: "FRA (Francia)", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/9_9df24560-3b4f-40d7-b302-5171145d7fdd.png?v=1767765505&width=990" },
+    { id: 5, name: "HAITI", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/10_d0aa080a-e8ee-45d9-89a9-55b1defed0b5.png?v=1767765505&width=990" },
+    { id: 6, name: "JAP (Japón)", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/11_7ae0eb1f-6678-4707-a74f-554de1589b21.png?v=1767765505&width=990" },
+    { id: 7, name: "ESCOCIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/12_5794a910-7bb9-445a-8861-5004958fa43b.png?v=1767765505&width=990" },
+    { id: 8, name: "CABO VERDE", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/13_4ee216c9-488f-4a64-8a3d-a284b0acbf61.png?v=1767765505&width=990" },
+    { id: 9, name: "PORTUGAL", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/14_4cef2f4f-f2ce-4423-87b6-b4a444ad3f53.png?v=1767765505&width=990" },
+    { id: 10, name: "MARRUECOS", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/15_ee904571-ca46-403a-970c-3ac796453037.png?v=1767765505&width=990" },
+    { id: 11, name: "POLONIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/16_170f33af-522f-494e-ae03-95aba3945aa5.png?v=1767765505&width=990" },
+    { id: 12, name: "CHILE", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/17_8641eb13-64f2-4a8a-9bb1-b8e22c018d92.png?v=1767765505&width=990" },
+    { id: 13, name: "AUSTRIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/18_e6c9b252-e5e7-4b2a-a001-7c9319848c18.png?v=1767765505&width=990" },
+    { id: 14, name: "ESPAÑA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/19_290a7f2f-2cc2-4ed8-a1ed-99be5c610e52.png?v=1767765505&width=990" },
+    { id: 15, name: "COREA DEL SUR", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/20_4323a3af-a374-429a-ac1b-0baf82ee6771.png?v=1767765505&width=990" },
+    { id: 16, name: "TUNEZ", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/21_3d108953-eb5f-489b-b439-c6e680da813e.png?v=1767765505&width=990" },
+    { id: 17, name: "CROACIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/22_fda058aa-bbb3-499a-b8f0-08d1f2a7739c.png?v=1767765505&width=990" },
+    { id: 18, name: "CANADA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/23_a98566f2-939d-4f5c-bb5d-9728db96e383.png?v=1767765505&width=990" },
+    { id: 19, name: "PANAMA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/24_9eeac16c-6a77-4147-a591-c73403c3095b.png?v=1767765505&width=990" },
+    { id: 20, name: "NORUEGA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/25_41210fbd-9420-444d-8843-6bf1495ccf5d.png?v=1767765505&width=990" },
+    { id: 21, name: "DINAMARCA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/30_727e3f6c-c673-464c-bf62-9412cda6bde2.png?v=1767765505&width=990" },
+    { id: 22, name: "BELGICA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/29_d994a85c-00aa-4d12-9649-190210c897b7.png?v=1767765505&width=990" },
+    { id: 23, name: "SUIZA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/28_fc51cc36-13ae-49e4-95ad-f8384a78616e.png?v=1767765505&width=990" },
+    { id: 24, name: "EGIPTO", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/27_e8822b79-cfd5-497e-9254-8173db4edd78.png?v=1767765505&width=990" },
+    { id: 25, name: "PARAGUAY", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/26_f0a75258-2215-448a-8524-42ee8728eeab.png?v=1767765505&width=990" },
+    { id: 26, name: "BRASIL", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/31_18646e93-6edc-4e29-b6c9-38a3e3195804.png?v=1767765505&width=990" },
+    { id: 27, name: "SUDAFRICA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/36_d692a0ba-8bed-454b-8604-b46d5adb1d07.png?v=1767765505&width=990" },
+    { id: 28, name: "SENEGAL", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/41_6e465a66-50f4-4cfb-9eb2-2cf5bf6d3639.png?v=1767765505&width=990" },
+    { id: 29, name: "INGLATERRA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/42_5293b125-84ca-4182-864e-b50b4cfc5052.png?v=1767765505&width=990" },
+    { id: 30, name: "MÉXICO", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/37_f1c63d65-cc62-4fe4-a32b-ea2ad41f5ce8.png?v=1767765505&width=990" },
+    { id: 31, name: "JAMAICA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/32_8bd6dfef-2584-483b-a632-0fff3adcc68e.png?v=1767765505&width=990" },
+    { id: 32, name: "COLOMBIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/33_2db75ec5-c8e4-481a-9881-366f60d63c16.png?v=1767765505&width=990" },
+    { id: 33, name: "ARABIA SAUDI", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/38_a83e3ab0-74a6-4376-acd4-1543c055c477.png?v=1767765505&width=990" },
+    { id: 34, name: "USA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/43_2a5567e1-67a6-4c13-b268-27f09e68a067.png?v=1767765505&width=990" },
+    { id: 35, name: "GHANA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/44_266e751e-ceaa-409a-b7cf-e65034a7113b.png?v=1767765506&width=990" },
+    { id: 36, name: "JORDANIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/45_6ae4f80c-38b7-45b6-b7aa-4af79a2994a5.png?v=1767765505&width=990" },
+    { id: 37, name: "ALEMANIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/40_eba2a812-63ac-4ccb-bdf1-358afcfdf96a.png?v=1767765505&width=990" },
+    { id: 38, name: "ITALIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/39_a59b91c4-b633-4e85-a7ae-7a6fb8a06696.png?v=1767765507&width=990" },
+    { id: 39, name: "ECUADOR", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/34_d634f80c-b316-421a-9927-13ca4f428c45.png?v=1767765505&width=990" },
+    { id: 40, name: "ARGELIA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/35_6ccc1044-a477-44e8-989c-8ac182e89ec2.png?v=1767765505&width=990" },
+    { id: 41, name: "QATAR", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/51.png?v=1767765505&width=990" },
+    { id: 42, name: "UZB (Uzbekistán)", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/46_b84bb275-a5da-4f6a-8e8d-f978bccb5a95.png?v=1767765509&width=990" },
+    { id: 43, name: "NUEVA ZELANDA", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/47_c20fd24c-79f0-4eec-a2ca-7f0d609a2572.png?v=1767765505&width=990" },
+    { id: 44, name: "IRAN", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/PRODUCTOS.png?v=1767766225&width=990" },
+    { id: 45, name: "PAISES BAJOS", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/49_7df0be63-a547-4470-a02b-cc10e3cc45a2.png?v=1767765505&width=990" },
+    { id: 46, name: "COSTA DE MARFIL", image_url: "https://ucuha5-yc.myshopify.com/cdn/shop/files/50_896f9759-3120-4192-a2ee-20ada062c8f8.png?v=1767765505&width=990" }
+];
+
+module.exports = CARDS_POOL;
